@@ -1,0 +1,176 @@
+
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKSTORE | Ecommerce website</title>
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="{% static 'images/BKSTORELOGO.png'%}" width="255px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="{% static 'images//cart.png'%}" style="margin-left: 10px;" width="30px" height="30px" ></a>
+            <img src="{% static 'images/menu.png'%}" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+
+    <div class="small-container single-product">
+        <br> </br>
+        
+        <div class="row">
+            <div class="col-2">
+                <img src="{% static 'images/barca_2005-2006-removebg-preview.png'%}" width="100%">
+            
+            </div>
+            <div class="col-2">
+                <p>Home / JERSEY</p>
+                <h1>2005-2006 FC BARCELONE Retro Jersey</h1>
+                <h4>400 DH</h4>
+                <select>
+                    <option >Select Size</option>
+                    <option >XXL</option>
+                    <option >XL</option>
+                    <option >Large</option>
+                    <option >Medium</option>
+                    <option >Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+
+                <h3>Product Details <i class="fa fa-indent"></i> </h3>
+                <br>
+                <p>RONALDINHO, OLD BUT GOLD !!</p>
+                    
+            </div>
+        </div>
+    </div>
+    <br> </br>
+    
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="Products.html"><p>View More</p></a>
+        </div>
+    </div>
+
+
+
+<div class="small-container">
+    
+    <div class="row">
+        
+        <div class="col-4">
+            <img src="{% static 'images/cr7 utd 2007-2008.png=z-0,0_f-webp'%}" >
+            <h4>2004-2005 PORTUGAL Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>700 DH</p>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/barca_2001-2002-removebg-preview.png'%}" >
+            <h4>2001-2002 FC BARCELONE Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>600 DH</p>
+        </div>
+    
+    <div class="col-4">
+        <img src="{% static 'images/beckam_ang_2005-2006-removebg-preview.png'%}" >
+        <h4>2005-2006 ENGLAND Retro Jersey</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star" ></i>
+        </div>
+        <p>500 DH</p>
+    </div>
+<div class="col-4">
+    <img src="{% static 'images/milan_98-99-removebg-preview.png'%}" >
+    <h4>1998-1999 AC MILANRetro Jersey</h4>
+    <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star" ></i>
+    </div>
+    <p>700 DH</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col-2">
+                <img src="{% static 'images/BKSTORELOGO.png'%}">
+                <p>Step up your game with our collection of vintage football jerseys. From classic teams to iconic players, our jerseys are the perfect way to showcase your love for the game. Shop now and score a winning look!</p>
+            </div>
+            <div class="footer-col-8">
+                <img src="{% static 'images/PL.png' %}">
+                <p>Payement at Delivery</p>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</div>
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

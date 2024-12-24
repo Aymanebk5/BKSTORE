@@ -1,0 +1,252 @@
+
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKSTORE | Ecommerce website</title>
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="{% static 'images/BKSTORELOGO.png'%}" width="255px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="{% static 'images//cart.png'%}" style="margin-left: 10px;" width="30px" height="30px" ></a>
+            <img src="{% static 'images/menu.png'%}" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Products</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="{% static 'images/téléchargement__3_-removebg-preview.png'%}" >
+            <h4>1996-1997 Man United Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full" ></i>
+            </div>
+            <p>500 DH</p>
+            
+            
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <a href="Product-details.html"><img src="{% static 'images/téléchargement__4_-removebg-preview.png'%}" ></a>
+            <h4>2004-2006 France Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full" ></i>
+            </div>
+            <p>450 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <a href="Product-details2.html"><img src="{% static 'images/barca_2005-2006-removebg-preview.png'%}" ></a>
+            <h4>2005-2006 FC BARCELONE Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>400 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <a href="Product-details3.html"><img src="{% static 'images/2007-08-ac-milan-home-shirt-ka-32310-1-removebg-preview.png'%}" ></a>
+            <h4>2008-2009 AC MILAN Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>400 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/spain_2008-2009-removebg-preview.png'%}" >
+            <h4>2008-2009 SPAIN Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>400 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/liverpool_2008-2009-removebg-preview.png'%}" >
+            <h4>2008-2009 LIVERPOOL Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>350 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/arsenal_05-06-removebg-preview.png'%}" >
+            <h4>2005-2006 ARSENAL Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>400 DH</p>
+            <a class="btn btn-success">Add To Cart</a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/beckam_united_2000-2001-removebg-preview.png'%}" >
+            <h4>2000-2001 MAN UNITED Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <p>500 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+    </div>
+      
+<div class="page-btn">
+    <a href="Products2.html"><span>1</span></a>
+    <a href="Products2.html"><span>2</span></a>
+    <a href="Products3.html"><span>3</span></a>
+    
+    <span>&#8594;</span>
+</div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col-2">
+                <img src="{% static 'images/BKSTORELOGO.png'%}">
+                <p>Step up your game with our collection of vintage football jerseys. From classic teams to iconic players, our jerseys are the perfect way to showcase your love for the game. Shop now and score a winning look!</p>
+            </div>
+            <div class="footer-col-8">
+                <img src="{% static 'images/PL.png' %}">
+                <p>Payement at Delivery</p>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</div>
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    
+function sortProductsByDefault() { 
+}
+
+function sortProductsByPrice() {
+    products.sort(function(a, b) {
+    return a.price - b.price;
+    });
+}
+
+function sortProductsByPopularity() {
+    products.sort(function(a, b) {
+return b.popularity - a.popularity;
+    });
+}
+
+function sortProductsByRating() {
+    products.sort(function(a, b) {
+return b.rating - a.rating;
+    });
+}
+
+function sortProductsBySale() {
+    products.sort(function(a, b) {
+return b.sale - a.sale;
+    });
+}
+
+document.getElementById('sort-by-default').addEventListener('click', sortProductsByDefault);
+document.getElementById('sort-by-price').addEventListener('click', sortProductsByPrice);
+document.getElementById('sort-by-popularity').addEventListener('click', sortProductsByPopularity);
+document.getElementById('sort-by-rating').addEventListener('click', sortProductsByRating);
+document.getElementById('sort-by-sale').addEventListener('click', sortProductsBySale);
+</script>
+<script>
+    // JavaScript code to handle the add to cart functionality
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const productId = this.dataset.productId;
+        // Send an AJAX request to the cart_add URL with the product ID
+        fetch(`/cart/add/${productId}/`)
+          .then(response => response.json())
+          .then(data => {
+            alert(data.message);
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      });
+    });
+  </script>
+</body>
+</html>

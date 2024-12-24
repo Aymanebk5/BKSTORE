@@ -1,0 +1,195 @@
+
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKSTORE | Ecommerce website</title>
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="{% static 'images/BKSTORELOGO.png'%}" width="255px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="{% static 'images//cart.png'%}" style="margin-left: 10px;" width="30px" height="30px" ></a>
+            <img src="{% static 'images/menu.png'%}" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Products</h2>
+        
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="{% static 'images/cr7 utd 2007-2008.png=z-0,0_f-webp'%}" >
+            <h4>2007-2008 MAN UNITED Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full" ></i>
+            </div>
+            <p>400 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/2004-05-inter-milan-nike-home-41540-1-removebg-preview.png'%}" >
+            <h4>2004-2005 INTER MILAN Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-full" ></i>
+            </div>
+            <p>300 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/ARGENT_2006-2007-removebg-preview.png'%}" >
+            <h4>2006-2007 ARGENTINA Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>500 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/spain_2010-2011_casillas-removebg-preview.png'%}" >
+            <h4>2010-2011 SPAIN Retro Jersey</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>500 DH</p>
+            <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+        </div>
+    <div class="col-4">
+        <img src="{% static 'images/rma_2000-2001-removebg-preview.png'%}" >
+        <h4>2000-2001 REAL MADRID Retro Jersey</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star" ></i>
+        </div>
+        <p>600 DH</p>
+        <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+    </div>
+    <div class="col-4">
+        <img src="{% static 'images/baggio_inter_98-99-removebg-preview.png'%}" >
+        <h4>1998-1999 INTER MILAN Retro Jersey</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star" ></i>
+        </div>
+        <p>600 DH</p>
+        <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+    </div>
+<div class="col-4">
+    <img src="{% static 'images/bresil_2006-2007-removebg-preview.png'%}" >
+    <h4>2006-2007 BREZIL Retro Jersey</h4>
+    <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star" ></i>
+    </div>
+    <p>600 DH</p>
+    <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+</div>
+<div class="col-4">
+    <img src="{% static 'images/buffon_juve_2006-2007-removebg-preview.png'%}" >
+    <h4>2006-2007 JUVENTUS Retro Jersey</h4>
+    <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star" ></i>
+    </div>
+    <p>500 DH</p>
+    <a href="cart.html"><button class="btn bk btn-success" id="add-to-cart" data-product-id="1" data-product-name="Product Name" data-product-price="9.99">Add to Cart</button></a>
+</div>
+</div>
+<div class="page-btn">
+    <a href="Products.html"><span>1</span></a>
+    <a href="Products2.html"><span>2</span></a>
+    <a href="Products3.html"><span>3</span></a>
+    <span>&#8594;</span>
+</div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col-2">
+                <img src="{% static 'images/BKSTORELOGO.png'%}">
+                <p>Step up your game with our collection of vintage football jerseys. From classic teams to iconic players, our jerseys are the perfect way to showcase your love for the game. Shop now and score a winning look!</p>
+            </div>
+            <div class="footer-col-8">
+                <img src="{% static 'images/PL.png' %}">
+                <p>Payement at Delivery</p>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKSTORE | Ecommerce website</title>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="{% static 'images/BKSTORELOGO.png'%}" width="255px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="ABOUT.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="{% static 'images//cart.png'%}" style="margin-left: 10px;" width="30px" height="30px" ></a>
+            <img src="{% static 'images/menu.png'%}" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <h1>Commande Page</h1>
+
+        <form action="index.html" method="post">
+            {% csrf_token %}
+            <label for="UserName">UserName:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <button type="submit">Submit</button>
+    
+        </form> 
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="footer-col-2">
+                        <img src="{% static 'images/BKSTORELOGO.png'%}">
+                        <p>Step up your game with our collection of vintage football jerseys. From classic teams to iconic players, our jerseys are the perfect way to showcase your love for the game. Shop now and score a winning look!</p>
+                    </div>
+                    <div class="footer-col-8">
+                        <img src="{% static 'images/PL.png' %}">
+                        <p>Payement at Delivery</p>
+                                        </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
